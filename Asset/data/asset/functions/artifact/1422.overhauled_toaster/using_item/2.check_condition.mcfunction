@@ -6,7 +6,7 @@
 
 #> Private
 # @private
-    #declare score_holder $Count
+    #declare score_holder $A1422.Count
 
 # チャージ中は開始時の消費とクールダウン判定を繰り返さない
     data modify storage api: Argument.ID set value 415
@@ -21,9 +21,9 @@
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
     function asset:artifact/common/check_condition/mainhand
     execute if entity @s[tag=!CanUsed] run return fail
-    execute store result score $Count Temporary run clear @s bread 0
-    execute unless score $Count Temporary matches 1.. run tag @s remove CanUsed
-    scoreboard players reset $Count Temporary
+    execute store result score $A1422.Count Temporary run clear @s bread 0
+    execute unless score $A1422.Count Temporary matches 1.. run tag @s remove CanUsed
+    scoreboard players reset $A1422.Count
     execute if entity @s[tag=!CanUsed] run function lib:message/artifact/dont_have_require_items
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
