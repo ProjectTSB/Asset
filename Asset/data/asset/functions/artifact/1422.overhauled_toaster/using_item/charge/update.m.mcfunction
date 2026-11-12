@@ -2,8 +2,7 @@
 #
 # チャージ段階を更新して音を再生する
 #
-# @input
-#   macro:
+# @input args:
 #     Stack: int
 #     Pitch: double
 #   storage api:
