@@ -12,13 +12,8 @@
 # パンを1個消費
     clear @s bread 1
 
-# 演出
-    playsound minecraft:block.note_block.chime player @a ~ ~ ~ 1 1.8
-
 # チャージ用エフェクト
-    data modify storage api: Argument.ID set value 415
     data modify storage api: Argument.FieldOverride.Range set value 40
     data modify storage api: Argument.FieldOverride.Speed set value [1,2,3,4,5,6,7]
     data modify storage api: Argument.FieldOverride.Damage set value [40,70,120,120,120,120,120]
-    function api:entity/mob/effect/give
-    function api:entity/mob/effect/reset
+    function asset:artifact/1422.overhauled_toaster/using_item/charge/update.m {Stack:1,Pitch:1.8}
