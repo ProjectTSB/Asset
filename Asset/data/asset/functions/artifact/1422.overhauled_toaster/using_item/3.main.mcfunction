@@ -18,9 +18,7 @@
 # チャージ用エフェクト
     data modify storage api: Argument.ID set value 415
     data modify storage api: Argument.FieldOverride.Range set value 40
-    data modify storage api: Argument.FieldOverride.Speed.Charge1 set value 1
-    data modify storage api: Argument.FieldOverride.Speed.Charge2 set value 2
-    data modify storage api: Argument.FieldOverride.Speed.Charge3 set value 3
+    data modify storage api: Argument.FieldOverride.Speed set value {Charge1:1,Charge2:2,Charge3:3}
     data modify storage api: Argument.FieldOverride.Damage set value {Charge1:40,Charge2:70,Charge3:120}
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
