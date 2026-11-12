@@ -13,7 +13,4 @@
     clear @s bread 1
 
 # チャージ用エフェクト
-    data modify storage api: Argument.FieldOverride.Range set value 40
-    data modify storage api: Argument.FieldOverride.Speed set value [1,1,1,2,2,2,4]
-    data modify storage api: Argument.FieldOverride.Damage set value [40,70,120,120,120,120,120]
     function asset:artifact/1422.overhauled_toaster/using_item/charge/update.m {Stack:1,Pitch:1.7}
