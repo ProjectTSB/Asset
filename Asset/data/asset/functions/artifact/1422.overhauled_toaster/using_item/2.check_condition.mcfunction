@@ -11,7 +11,7 @@
 # チャージ中は開始時の消費とクールダウン判定を繰り返さない
     data modify storage api: Argument.ID set value 415
     function api:entity/mob/effect/get/from_id
-    execute if data storage api: Return.Effect run return run function asset:artifact/1422.overhauled_toaster/using_item/charge
+    execute if data storage api: Return.Effect run return run function asset:artifact/1422.overhauled_toaster/using_item/charge/
 
 # 発射が終わるまで次のチャージを開始しない
     data modify storage api: Argument.ID set value 434
