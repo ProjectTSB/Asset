@@ -13,7 +13,7 @@
 #   asset:artifact/1422.overhauled_toaster/using_item/charge/
 
 # チャージ段階の演出
-    $playsound minecraft:block.note_block.chime player @a ~ ~ ~ 1 $(Pitch)
+    $execute anchored eyes positioned ^ ^ ^0.5 run playsound minecraft:block.note_block.chime player @a ~ ~ ~ 1 $(Pitch)
 
 # 開始時の設定を保ち、2段階目以降は取得したFieldを引き継ぐ
     data modify storage api: Argument.ID set value 415
