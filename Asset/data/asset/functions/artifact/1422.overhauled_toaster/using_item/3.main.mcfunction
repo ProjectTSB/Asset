@@ -16,7 +16,7 @@
     playsound minecraft:block.note_block.chime player @a ~ ~ ~ 1 1.8
 
 # チャージ用エフェクト
-    data modify storage api: Argument.ID set value 362
+    data modify storage api: Argument.ID set value 415
     data modify storage api: Argument.FieldOverride.Range set value 40
     data modify storage api: Argument.FieldOverride.Speed set value {Charge1:1,Charge2:2,Charge3:3}
     data modify storage api: Argument.FieldOverride.Damage set value {Charge1:40,Charge2:70,Charge3:120}

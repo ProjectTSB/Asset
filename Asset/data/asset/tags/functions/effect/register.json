@@ -202,6 +202,7 @@
         "asset:effect/0258.spirit_melody/_/register",
         "asset:effect/0406.ocean_grace/_/register",
         "asset:effect/0415.baking/_/register",
-        "asset:effect/0416.toaster_shooting/_/register"
+        "asset:effect/0416.toaster_shooting/_/register",
+        "asset:effect/0434.overhauled_toaster_shooting/_/register"
     ]
 }

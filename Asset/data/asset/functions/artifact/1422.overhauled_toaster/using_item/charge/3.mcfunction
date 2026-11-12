@@ -1,6 +1,6 @@
 #> asset:artifact/1422.overhauled_toaster/using_item/charge/3
 #
-#
+# チャージ段階を更新する
 #
 # @within function asset:artifact/1422.overhauled_toaster/using_item/charge
 
