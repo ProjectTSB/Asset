@@ -64,7 +64,7 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 トースターはチャージ表示用のEffect 415と、使用解除後の発射用Effect 416を分ける。装備解除では415だけを削除し、発射開始後は416が2枚のパンを1tickずつずらして射出する。416が残る間は次のチャージを開始しない。チャージ表示の寿命と発射処理の寿命を同じEffectで管理しない実例である。
 
-魔改造トースター1422は、開始時を1段階とし、使用時間が2・4・6・8・10・12tickに達すると2〜7段階へ更新する。神器の `using_item/3.main` でSpeedとDamageを7要素の配列として指定し、段階更新と使用解除ではField全体を引き継ぐ。開始と継続の `using_item/charge/` は、StackとPitchを引数に共通の `charge/update.m` を呼ぶ。1段階目は開始時のFieldOverrideを使い、2段階目以降は取得したEffectのFieldを引き継ぐ。発射用Effect434は `Stack:N` の条件分岐で配列の `N-1` 番目を取得し、マクロを使わず各段階の弾速と威力を選ぶ。共有するチャージ表示用Effect415の既定Fieldは1421の形式を保ち、1422の配列は付与時に上書きする。
+魔改造トースター1422は、開始時を1段階とし、使用時間が3・5・7・9・11・13tickに達すると2〜7段階へ更新する。神器の `using_item/3.main` でSpeedとDamageを7要素の配列として指定し、段階更新と使用解除ではField全体を引き継ぐ。開始時の `using_item/3.main` と継続時の `using_item/charge/` は、StackとPitchを引数に共通の `charge/update.m` を呼ぶ。1段階目は開始時のFieldOverrideを使い、2段階目以降は取得したEffectのFieldを引き継ぐ。発射用Effect434は `Stack - 1` をIndexに変換し、`tick/shoot.m` へ渡してSpeedとDamageの配列から弾速と威力を取得する。共有するチャージ表示用Effect415の既定Fieldは1421の形式を保ち、1422の配列は付与時に上書きする。
 
 ### 持ち替えでチャージを引き継がせない
 
