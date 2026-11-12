@@ -36,6 +36,6 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    data modify storage asset:effect Field.Damage set value {Charge1:1,Charge2:10,Charge3:100}
-    data modify storage asset:effect Field.Speed set value {Charge1:1,Charge2:2,Charge3:3}
+    data modify storage asset:effect Field.Damage set value [40,70,120,120,120,120,120]
+    data modify storage asset:effect Field.Speed set value [1,2,3,4,5,6,7]
     data modify storage asset:effect Field.Range set value 40
