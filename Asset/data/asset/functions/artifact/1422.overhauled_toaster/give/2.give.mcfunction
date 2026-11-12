@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"魔改造トースター","color":"#d7a657"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"長押しで最大3段階のチャージを行い"}','{"text":"チャージ段階に応じたダメージと速度のパンを6枚射出する"}','{"text":"朝も昼も夜も、ずーっとパンですよね！","color":"gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"長押しで最大3段階のチャージを行い"}','{"text":"チャージ段階に応じたダメージと速度のパンを6枚射出する"}','{"text":"朝も昼も夜も、これから毎日永遠にパンですよね！","color":"gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.bread"}'
     data modify storage asset:artifact ConsumeItem.Count set value 1
