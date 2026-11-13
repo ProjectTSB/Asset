@@ -64,6 +64,8 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 トースターはチャージ表示用のEffect 415と、使用解除後の発射用Effect 416を分ける。装備解除では415だけを削除し、発射開始後は416が2枚のパンを1tickずつずらして射出する。416が残る間は次のチャージを開始しない。チャージ表示の寿命と発射処理の寿命を同じEffectで管理しない実例である。
 
+魔改造トースター1422は、開始時を1段階とし、使用時間が3・5・7・9・11・13tickに達すると2〜7段階へ更新する。開始時の `using_item/3.main` と継続時の `using_item/charge/` は、StackとPitchを引数に共通の `charge/update.m` を呼び、表示用Effect415のStackを更新する。弾速・威力・射程はチャージ表示に不要なため415へ渡さず、`release_using_item/3.main` で `api: Return.Effect.Stack` を判定して発射用Effect434へ直接設定する。SpeedとDamageは段階に応じた単一の数値、Rangeは射程の値を渡す。434は受け取った値でパンを発射し、Stackによる分岐や配列・マクロでの取得を行わない。共有する415の既定Fieldは1421の実装に合わせて残すが、1422では参照しない。
+
 ### 持ち替えでチャージを引き継がせない
 
 チャージを使用中の神器に限定する場合、発射時だけでなく装備解除時にもチャージ用Effectを削除する。[Volt-Raveの装備解除](../../Asset/data/asset/functions/artifact/1619.volt_rave/dis_equip/2.main.mcfunction) はmainhandから外したときにEffect 394の削除を要求し、発射処理は呼ばない。同IDの別個体へ持ち替える場合もチャージを解除する。持ち替え検出とdis_equipのcontextは、依存先TheSkyBlessingの `architecture.md`「装備は前回との差から有効状態を組み直す」を参照する。
