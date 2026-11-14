@@ -27,6 +27,11 @@
 #ダメージ処理
     execute as @e[tag=13S.HitEnemy,distance=..5,sort=nearest,limit=1] run function asset:object/1158.ouroboros_ball/hit_entity/damage
 
+#同じ本体に属する敵(本体・追加当たり判定)も反射先の候補から外す
+    execute store result score $HitEnemyID Temporary run data get storage asset:context this.HitEnemyID
+    execute as @e[type=#lib:living_without_player,tag=!13S.HitEnemy,tag=!ExtendedCollision,distance=..8] if score @s MobUUID = $HitEnemyID Temporary run tag @s add 13S.HitEnemy
+    execute as @e[type=#lib:living_without_player,tag=ExtendedCollision,tag=!13S.HitEnemy,distance=..8] if score @s ForwardTargetMobUUID = $HitEnemyID Temporary run tag @s add 13S.HitEnemy
+
 # リセット
     scoreboard players reset $OwnerID Temporary
     scoreboard players reset $HitEnemyID Temporary
@@ -36,8 +41,8 @@
     execute if data storage asset:context this{ReflectionLimit:0} run function asset:object/call.m {method:"kill"}
 
 #8m以内に敵がいるなら、向きを変える。そうでない時は玉を消す。
-    execute if entity @e[type=#lib:living_without_player,tag=!13S.HitEnemy,tag=!Uninterferable,distance=..8] run function asset:object/1158.ouroboros_ball/hit_entity/reflect
-    execute unless entity @e[type=#lib:living_without_player,tag=!13S.HitEnemy,tag=!Uninterferable,distance=..8] run function asset:object/call.m {method:"kill"}
+    execute unless data storage asset:context this{ReflectionLimit:0} if entity @e[type=#lib:living_without_player,tag=!13S.HitEnemy,tag=!Uninterferable,distance=..8] run function asset:object/1158.ouroboros_ball/hit_entity/reflect
+    execute unless data storage asset:context this{ReflectionLimit:0} unless entity @e[type=#lib:living_without_player,tag=!13S.HitEnemy,tag=!Uninterferable,distance=..8] run function asset:object/call.m {method:"kill"}
 
 #ヒットタグもリセット
     tag @e[type=#lib:living_without_player,distance=..5] remove 13S.HitEnemy
