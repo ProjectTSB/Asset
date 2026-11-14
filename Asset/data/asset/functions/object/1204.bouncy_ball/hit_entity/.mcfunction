@@ -9,7 +9,7 @@
     #declare score_holder $OwnerID
 
 #Hitした敵にTagを付与
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=!Uninterferable,dx=0,sort=nearest,limit=1] run tag @s add 1AI.HitEnemy
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,dx=0,sort=nearest,limit=1] run tag @s add 1AI.HitEnemy
 
 #直前にヒットしている敵ならリセットしてreturn
     execute store result score $HitEnemyID Temporary run data get storage asset:context this.HitEnemyID
@@ -26,6 +26,11 @@
 #ダメージ処理
     execute as @e[tag=1AI.HitEnemy,distance=..5,sort=nearest,limit=1] run function asset:object/1204.bouncy_ball/hit_entity/damage
 
+# 同じMobの本体・当たり判定も反射先の候補から外す
+    execute store result score $HitEnemyID Temporary run data get storage asset:context this.HitEnemyID
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!ExtendedCollision,tag=!1AI.HitEnemy,distance=..12] if score @s MobUUID = $HitEnemyID Temporary run tag @s add 1AI.HitEnemy
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=ExtendedCollision,tag=!1AI.HitEnemy,distance=..12] if score @s ForwardTargetMobUUID = $HitEnemyID Temporary run tag @s add 1AI.HitEnemy
+
 # リセット
     scoreboard players reset $OwnerID Temporary
     scoreboard players reset $HitEnemyID Temporary
@@ -35,8 +40,8 @@
     execute if data storage asset:context this{ReflectionLimit:0} run function asset:object/call.m {method:"kill"}
 
 #12m以内に敵がいるなら、向きを変える。そうでない時はランダムな向きに向く
-    execute if entity @e[type=#lib:living_without_player,tag=!1AI.HitEnemy,tag=!Uninterferable,distance=..12] run function asset:object/1204.bouncy_ball/hit_entity/reflect
-    execute unless entity @e[type=#lib:living_without_player,tag=!1AI.HitEnemy,tag=!Uninterferable,distance=..12] run function asset:object/1204.bouncy_ball/hit_entity/random_direction
+    execute if entity @e[type=#lib:living_without_player,tag=Enemy,tag=!1AI.HitEnemy,tag=!Uninterferable,distance=..12] run function asset:object/1204.bouncy_ball/hit_entity/reflect
+    execute unless entity @e[type=#lib:living_without_player,tag=Enemy,tag=!1AI.HitEnemy,tag=!Uninterferable,distance=..12] run function asset:object/1204.bouncy_ball/hit_entity/random_direction
 
 #ヒットタグもリセット
-    tag @e[type=#lib:living_without_player,tag=1AI.HitEnemy,distance=..5] remove 1AI.HitEnemy
+    tag @e[type=#lib:living_without_player,tag=1AI.HitEnemy,distance=..64] remove 1AI.HitEnemy

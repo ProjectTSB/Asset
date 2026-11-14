@@ -10,3 +10,5 @@
     function lib:reflection_bullet/
 #vfx
     playsound minecraft:block.slime_block.fall player @a ~ ~ ~ 1.0 1 0.0
+#当たった敵の情報をリセット
+    data modify storage asset:context this.HitEnemyID set value -1
