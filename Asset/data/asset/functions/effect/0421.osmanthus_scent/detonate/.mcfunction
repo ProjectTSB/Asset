@@ -18,5 +18,8 @@
 
 # 攻撃者のプレイヤーを実行者にして爆発させる
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
-    execute as @a if score @s UserID = $UserID Temporary run function asset:effect/0421.osmanthus_scent/detonate/explode.m with storage asset:context this
+    execute as @a if score @s UserID = $UserID Temporary run function asset:effect/0421.osmanthus_scent/detonate/explode.m with storage asset:temp 421.Field
+     
+# リセット
     scoreboard players reset $UserID Temporary
+    data remove storage asset:temp 421
