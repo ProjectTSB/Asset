@@ -1,6 +1,6 @@
 #> asset:object/1208.osmanthus_scent/kill/attack.m
 #
-# 半径2mの敵へダメージを与え、近い順に最大MaxDebuffTargets体へEffectを付与する
+# 半径3mの敵へダメージを与え、近い順に最大MaxDebuffTargets体へEffectを付与する
 #
 # @input args:
 #   MaxDebuffTargets : int
@@ -17,6 +17,12 @@
     function api:damage/single_damage_session/close
     function api:damage/reset
 
+# 付与対象の候補を決める
+    # 追加当たり判定ではない敵はそのまま候補にする
+    tag @e[type=#lib:living_without_player,tag=Enemy,tag=!ExtendedCollision,tag=!Uninterferable,tag=!Death,distance=..3] add 1208.DebuffTarget
+    # 追加当たり判定は、近い順に本体ごとに1体だけ候補にする
+    execute as @e[type=#lib:living_without_player,tag=Enemy,tag=ExtendedCollision,tag=!Uninterferable,tag=!Death,distance=..3,sort=nearest] run function asset:object/1208.osmanthus_scent/kill/select_extended_collision
+
 # 爆心に近い順に最大MaxDebuffTargets体へ金木犀の香りを付与する
     data modify storage api: Argument.ID set value 421
     data modify storage api: Argument.Duration set from storage asset:context this.DebuffDuration
@@ -25,5 +31,9 @@
     data modify storage api: Argument.FieldOverride.UserID set from storage asset:context this.UserID
     data modify storage api: Argument.FieldOverride.SecondRate set from storage asset:context this.SecondRate
     data modify storage api: Argument.FieldOverride.SecondRadius set from storage asset:context this.SecondRadius
-    $execute as @e[type=#lib:living_without_player,tag=Enemy,tag=!Uninterferable,tag=!Death,distance=..3,sort=nearest,limit=$(MaxDebuffTargets)] run function api:entity/mob/effect/give
+    $execute as @e[type=#lib:living_without_player,tag=1208.DebuffTarget,distance=..3,sort=nearest,limit=$(MaxDebuffTargets)] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
+
+# リセット
+    tag @e[type=#lib:living_without_player,distance=..3] remove 1208.DebuffTarget
+    tag @e[type=#lib:living_without_player,distance=..3] remove 1208.Grouped
