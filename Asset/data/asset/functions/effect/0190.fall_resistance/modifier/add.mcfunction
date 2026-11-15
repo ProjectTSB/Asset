@@ -2,7 +2,9 @@
 #
 # 補正を付与する
 #
-# @within function asset:effect/0190.fall_resistance/given/
+# @within function
+#   asset:effect/0190.fall_resistance/given/
+#   asset:effect/0190.fall_resistance/re-given/
 
 # 落下ダメージ無効化
     data modify storage api: Argument.UUID set value [I;1,3,190,0]

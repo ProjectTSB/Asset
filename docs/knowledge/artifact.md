@@ -38,6 +38,16 @@ DeathMessageの書式例は [Thunder の命中処理](../../Asset/data/asset/fun
 
 種別を追加する場合は本体の判定・表示に加え、Assetの [表出力スクリプト](../../scripts/update-artifact-spreadsheet.scala.sc) のCooldownType解釈も確認する。既存の四種を使う神器の追加と、新種別の導入を同じ作業として扱わない。
 
+## 範囲攻撃のダメージ計算と一撃の区切り
+
+`single_damage_session`（以下SDS）は、拡張当たり判定を介した同じMobへの重複ダメージを防ぐために使う。
+
+同じMobの複数のExtendedCollisionを拾う攻撃で、一撃につき一回だけダメージを適用したい場合は、対象処理全体を `api:damage/single_damage_session/open`／`close` で囲む。命中箇所によって威力が変わる場合は、優先する判定を先に処理する。[stone_cutter_chainsawの命中処理](../../Asset/data/asset/functions/artifact/0471.stone_cutter_chainsaw/trigger/3.main.mcfunction) はクリティカル判定と通常判定を一つのセッションに含め、クリティカル側を先に適用する。多重命中を想定して威力を調整する攻撃へ導入すると命中回数が変わるため、[追加当たり判定へのダメージ調整](runtime-and-tools.md) と区別する。
+
+対象ごとにダメージを抽選・補正する既存例は [blade_of_dawnのdamage](../../Asset/data/asset/functions/artifact/1258.blade_of_dawn/trigger/damage.mcfunction) で、毎回補正前の値を設定し、modifier・damage・resetを呼ぶ。SDSは対象ごとのresetを挟んでも拡張当たり判定の処理済み記録を維持するが、Attackイベントを集約する機能ではない。通常entityへの反復呼び出しも制限しない。適用範囲と後始末は、本体の `TheSkyBlessing/data/api/functions/damage/single_damage_session/` と `damage/core/reset.mcfunction` を確認する。
+
+神器の攻撃トリガーで一撃の全対象を参照する処理は、`asset:context Attack.To` に必要な対象集合が入っているか確認する。現行の集約はmodifierの呼び出し単位で、攻撃元でmodifierを一度呼び、対象ごとにdamageを呼び、最後にresetする構成では対象が一つのイベントにまとまる。黎明の刃のように対象ごとにmodifierを呼ぶ構成では、SDS内でもイベントが分かれる。これは一回の範囲攻撃内で対象集合が分かれる問題であり、設置型の攻撃が一定間隔で繰り返され、それぞれ別イベントになることとは区別する。集約の契約は、本体の `docs/knowledge/api-and-storage.md`「攻撃の属性と能力値のAttributesを区別する」を参照する。
+
 ## 使用の継続・解除と、発動時の情報の保持
 
 スニークの一定時間到達で一度発動させる場合と、その時間以降ずっと発動させる場合は、`sneak/<N>s` と `sneak/keep/<N>s` の配送を使い分ける。slotごとの時間とcontextの絞り込みは、依存先TheSkyBlessingの `docs/knowledge/runtime-and-assets.md`「遅延・再入・破棄をイベント境界から読む」を参照する。
