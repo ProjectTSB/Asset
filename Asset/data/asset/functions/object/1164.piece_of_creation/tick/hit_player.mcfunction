@@ -20,14 +20,14 @@
     data modify storage api: Argument.ID set value 373
     data modify storage api: Argument.Duration set from storage asset:context this.Duration
     data modify storage api: Argument.FieldOverride.Amount set from storage asset:context this.Amount
-    execute as @a[gamemode=!spectator,tag=!Death,dx=0] positioned ~0.5 ~0.5 ~0.5 as @p run function api:entity/mob/effect/give
+    execute as @p[tag=1164.Target,dx=0] run function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
 
 # 回復
     data modify storage api: Argument.Heal set from storage asset:context this.Heal
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
     execute as @a if score @s UserID = $UserID Temporary run function api:heal/modifier
-    execute as @a[gamemode=!spectator,tag=!Death,dx=0] positioned ~0.5 ~0.5 ~0.5 as @p run function api:heal/
+    execute as @p[tag=1164.Target,dx=0] run function api:heal/
     function api:heal/reset
 
 # リセット
