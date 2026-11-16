@@ -5,4 +5,4 @@
 # @within asset_manager:object/init/init.m
 
 # 元のInit処理を呼び出す
-    function asset:object/1195.right_glove_creeper/init/
+    function asset:object/1195.creeper_glove_right/init/

@@ -1,11 +1,11 @@
-#> asset:object/1195.right_glove_creeper/summon/
+#> asset:object/1195.creeper_glove_right/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #
 # @within asset:object/alias/1195/summon
 
 # 元となるEntityを召喚する
-    execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ 0
+    execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ ~
     data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
-    function asset:object/1195.right_glove_creeper/summon/m with storage asset:temp Args
+    function asset:object/1195.creeper_glove_right/summon/m with storage asset:temp Args
     data remove storage asset:temp Args
