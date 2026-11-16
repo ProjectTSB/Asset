@@ -14,5 +14,5 @@
 
 # 所有者の今のyaw(度×100)を振り検出の基準にする
     execute store result score $UserID Temporary run data get storage asset:context this.UserID
-    execute as @a[distance=..16] if score @s UserID = $UserID Temporary store result storage asset:context this.PrevYaw int 1 run data get entity @s Rotation[0] 100
+    execute as @a[distance=..64] if score @s UserID = $UserID Temporary store result storage asset:context this.PrevYaw int 1 run data get entity @s Rotation[0] 100
     scoreboard players reset $UserID Temporary

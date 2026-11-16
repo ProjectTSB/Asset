@@ -14,7 +14,7 @@
     function asset:object/1195.creeper_glove_right/tick/main
 
 # リセット
-    tag @a[tag=1195.Owner,distance=..16] remove 1195.Owner
+    tag @a[tag=1195.Owner,distance=..64] remove 1195.Owner
     data remove storage asset:temp 1195
     scoreboard players reset $1195.SwingStart Temporary
     scoreboard players reset $1195.ArcT Temporary

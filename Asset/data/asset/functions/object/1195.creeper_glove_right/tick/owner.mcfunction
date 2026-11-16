@@ -1,6 +1,6 @@
 #> asset:object/1195.creeper_glove_right/tick/owner
 #
-# 所有者に1195.Ownerを付け、所有者が16m以内にいない・死亡中・スペクテイターなら失敗を返す
+# 所有者に1195.Ownerを付け、所有者が64m以内にいない・死亡中・スペクテイターなら失敗を返す
 #
 # @within function asset:object/1195.creeper_glove_right/tick/
 

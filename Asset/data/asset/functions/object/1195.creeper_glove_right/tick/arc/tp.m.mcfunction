@@ -4,4 +4,4 @@
 #
 # @within function asset:object/1195.creeper_glove_right/tick/arc/
 
-$execute as @p[tag=1195.Owner,distance=..64] at @s anchored eyes positioned ^ ^ ^ rotated ~ 0 positioned ^ ^$(H) ^$(F) rotated ~$(Theta) $(Pitch) positioned ^ ^ ^$(R) positioned ~$(DX) ~$(DY) ~$(DZ) run tp @e[type=item_display,tag=this,distance=..20,limit=1] ~ ~ ~ $(Yaw) $(VisPitch)
+$execute as @p[tag=1195.Owner,distance=..64] at @s anchored eyes positioned ^ ^ ^ rotated ~ 0 positioned ^ ^$(H) ^$(F) rotated ~$(Theta) $(Pitch) positioned ^ ^ ^$(R) positioned ~$(DX) ~$(DY) ~$(DZ) run tp @e[type=item_display,tag=this,distance=..64,limit=1] ~ ~ ~ $(Yaw) $(VisPitch)
