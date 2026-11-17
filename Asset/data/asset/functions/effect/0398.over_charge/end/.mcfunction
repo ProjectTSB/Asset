@@ -4,19 +4,14 @@
 #
 # @within function asset:effect/0398.over_charge/_/end
 
-#> Private
-# @private
-    #declare score_holder $CurrentMP
-    #declare score_holder $ReduceMPPer
-
 # 削除
     function asset:effect/0398.over_charge/modifier/remove
 
-# MP減らす
-    # 数値取得
-        function api:mp/get_current
-        execute store result score $CurrentMP Temporary run data get storage api: Return.CurrentMP
-        execute store result score $ReduceMPPer Temporary run data get storage asset:context this.ReduceMPPer 100
-    # 減らす
-        execute store result storage api: Argument.Fluctuation double -0.01 run scoreboard players operation $CurrentMP Temporary *= $ReduceMPPer Temporary
-        function api:mp/fluctuation
+# 物理・雷属性の固定ダメージを与える
+    data modify storage api: Argument.Damage set from storage asset:context this.Damage
+    data modify storage api: Argument.AttackType set value "Physical"
+    data modify storage api: Argument.ElementType set value "Thunder"
+    data modify storage api: Argument.FixedDamage set value true
+    function api:damage/modifier
+    function api:damage/
+    function api:damage/reset

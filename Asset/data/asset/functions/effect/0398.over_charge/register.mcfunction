@@ -11,7 +11,7 @@
 # 名前 (TextComponentString)
     data modify storage asset:effect Name set value '{"text":"オーバーチャージ","color":"#6669ff"}'
 # 説明文 (TextComponentString[])
-    data modify storage asset:effect Description set value ['{"text":"雷属性与ダメージが上昇するが","color":"white"}','{"text":"効果時間終了時に現在MPに比例してMPを失う","color":"white"}']
+    data modify storage asset:effect Description set value ['{"text":"雷属性与ダメージが上昇するが","color":"white"}','{"text":"効果時間終了時に固定ダメージを受ける","color":"white"}']
 # 効果時間 (int) (default = API || error)
     # data modify storage asset:effect Duration set value
 # スタック (int) (default = API || 1)
@@ -38,4 +38,4 @@
 # フィールド
     data modify storage asset:effect Field.UUID set value [I;1,3,398,0]
     data modify storage asset:effect Field.Modifier set value 0.15d
-    data modify storage asset:effect Field.ReduceMPPer set value 0.4d
+    data modify storage asset:effect Field.Damage set value 40

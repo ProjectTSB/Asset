@@ -14,6 +14,6 @@
     data modify storage api: Argument.ID set value 398
     data modify storage api: Argument.Duration set value 400
     data modify storage api: Argument.FieldOverride.Modifier set value 0.15d
-    data modify storage api: Argument.FieldOverride.ReduceMPPer set value 0.5d
+    data modify storage api: Argument.FieldOverride.Damage set value 40
     function api:entity/mob/effect/give
     function api:entity/mob/effect/reset
