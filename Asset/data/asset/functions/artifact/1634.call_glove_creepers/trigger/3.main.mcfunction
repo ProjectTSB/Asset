@@ -21,12 +21,12 @@
 # 右のグローブを召喚する
     data modify storage api: Argument.ID set value 1195
     data modify storage api: Argument.FieldOverride set from storage asset:temp 1634.FieldOverride
-    execute anchored eyes positioned ^ ^ ^ rotated ~ 0 positioned ^-1.0 ^-0.3 ^0.2 rotated as @s run function api:object/summon
+    execute anchored eyes positioned ^ ^ ^ rotated ~ 0 positioned ^-1.0 ^-0.3 ^-0.1 rotated as @s run function api:object/summon
 
 # 左のグローブを召喚する
     data modify storage api: Argument.ID set value 1196
     data modify storage api: Argument.FieldOverride set from storage asset:temp 1634.FieldOverride
-    execute anchored eyes positioned ^ ^ ^ rotated ~ 0 positioned ^1.0 ^-0.3 ^0.2 rotated as @s run function api:object/summon
+    execute anchored eyes positioned ^ ^ ^ rotated ~ 0 positioned ^1.0 ^-0.3 ^-0.1 rotated as @s run function api:object/summon
 
 # 演出
     playsound entity.creeper.primed player @a ~ ~ ~ 0.7 1.2

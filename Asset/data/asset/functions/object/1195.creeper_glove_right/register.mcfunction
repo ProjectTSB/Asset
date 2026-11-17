@@ -26,7 +26,7 @@
     data modify storage asset:object Field.Side set value 1
     data modify storage asset:object Field.OffsetSide set value 1.0d
     data modify storage asset:object Field.OffsetUp set value -0.3d
-    data modify storage asset:object Field.OffsetForward set value 0.2d
+    data modify storage asset:object Field.OffsetForward set value -0.1d
     data modify storage asset:object Field.Reach set value 3.0d
     # 振り (閾値は度/tick、時間はtick)
     data modify storage asset:object Field.SwingThreshold set value 5.0d
