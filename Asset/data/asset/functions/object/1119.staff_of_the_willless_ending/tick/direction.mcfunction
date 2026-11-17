@@ -40,8 +40,8 @@
 # タイトルコマンド
     title @a times 10 60 30
     title @a title [{"text":"WORLD PURIFIED","bold":true,"color":"yellow"}]
-    execute if data storage global Config{ShowPlayTimeOnDispel: true} run title @a subtitle {"text":"","bold":false,"extra":[{"text":"TIME ","color":"gold"},{"storage":"asset:temp","nbt":"Temp.Time[]","separator":""}]}
-    execute if data storage global Config{ShowPlayTimeOnDispel:false} run title @a subtitle {"text":""}
+    execute if data storage global Config{ShowPlayTimeOnPurify: true} run title @a subtitle {"text":"","bold":false,"extra":[{"text":"TIME ","color":"gold"},{"storage":"asset:temp","nbt":"Temp.Time[]","separator":""}]}
+    execute if data storage global Config{ShowPlayTimeOnPurify:false} run title @a subtitle {"text":""}
 
 # Particle
     execute at @a run particle end_rod ~ ~1.1 ~ 0.15 0.15 0.15 2 150 force @a

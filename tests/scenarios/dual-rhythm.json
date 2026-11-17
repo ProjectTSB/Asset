@@ -1,0 +1,1034 @@
+{
+  "name": "dual-rhythm-1412",
+  "scope": {
+    "verified": "Explicitly initialized Flora players; artifact grants guard; Effect owns contact and transfer; inventory/tick/Effect/modifier integration; no natural-login or HP-damage assertion. Caller-supplied amounts and durations; given initialization and same-amount refresh; pending-given overwrite is investigated separately in core.",
+    "fixture": "Fresh flat world; protocol clients; first_join and faith tags set explicitly; time advanced with tick step. The Death tag is set directly for condition checks, not a death/respawn lifecycle test. Area entry settles before spectator checks. Final lifecycle checks give/remove Effect 399 through public APIs; an independent modifier UUID belongs only to the test fixture.",
+    "notVerified": [
+      "rendering",
+      "resource pack",
+      "natural first join",
+      "actual damage HP",
+      "shard draw",
+      "rejoin",
+      "actual death and respawn lifecycle"
+    ]
+  },
+  "players": [
+    "SealOwner",
+    "SealTarget",
+    "SealThird"
+  ],
+  "steps": [
+    {
+      "name": "Explicit fixture: initialize players and choose Flora",
+      "commands": [
+        "gamerule doMobSpawning false",
+        "gamerule doDaylightCycle false",
+        "gamemode creative @a",
+        "execute as @a at @s run function core:handler/first_join",
+        "tag @a remove Believe.None",
+        "tag @a add Believe.Flora",
+        "fill -5 79 -5 15 79 5 stone",
+        "tp SealOwner 0.5 80 0.5",
+        "tp SealTarget 5.5 80 0.5",
+        "tp SealThird 10.5 80 0.5",
+        "clear @a",
+        "execute if entity @a[name=SealOwner,tag=Friend,tag=Believe.Flora]"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Baseline defense",
+      "commands": [
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Settle area entry before equipping and changing game mode",
+      "ticks": 2
+    },
+    {
+      "name": "Create and equip artifact through public API",
+      "commands": [
+        "data modify storage api: Argument.ID set value 1412",
+        "execute as SealOwner at @s run function api:artifact/give/from_id",
+        "item replace entity SealOwner weapon.offhand from entity SealOwner hotbar.0",
+        "item replace entity SealOwner hotbar.0 with air",
+        "execute if data entity SealOwner Inventory[{Slot:-106b}].tag.TSB{ID:1412}"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Rarity pool includes artifact 1412",
+      "commands": [
+        "data get storage asset:artifact RarityRegistry[4]"
+      ],
+      "expect": [
+        "\\[1412\\]"
+      ]
+    },
+    {
+      "name": "Fixture: enter spectator before activation",
+      "commands": [
+        "gamemode spectator SealOwner"
+      ],
+      "expect": [
+        "(Set .*game mode|Added tag|Removed tag)"
+      ]
+    },
+    {
+      "name": "Process artifact tick with spectator",
+      "ticks": 3
+    },
+    {
+      "name": "No guard given with spectator",
+      "commands": [
+        "data modify storage api: Argument.ID set value 399",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute if entity @a[name=SealOwner,gamemode=spectator] unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Common offhand check alone allows spectator",
+      "commands": [
+        "execute as SealOwner run function asset_manager:artifact/data/new/init",
+        "function asset_manager:artifact/data/new/set_to_current",
+        "execute as SealOwner run function asset:artifact/common/check_condition/offhand",
+        "execute if entity @a[name=SealOwner,tag=CanUsed,gamemode=spectator]"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Fixture: leave spectator",
+      "commands": [
+        "gamemode creative SealOwner"
+      ],
+      "expect": [
+        "(Set .*game mode|Added tag|Removed tag)"
+      ]
+    },
+    {
+      "name": "Fixture: enter Death tag before activation",
+      "commands": [
+        "tag SealOwner add Death"
+      ],
+      "expect": [
+        "(Set .*game mode|Added tag|Removed tag)"
+      ]
+    },
+    {
+      "name": "Process artifact tick with Death tag",
+      "ticks": 3
+    },
+    {
+      "name": "No guard given with Death tag",
+      "commands": [
+        "data modify storage api: Argument.ID set value 399",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute if entity @a[name=SealOwner,tag=Death] unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Common offhand check alone allows Death tag",
+      "commands": [
+        "execute as SealOwner run function asset_manager:artifact/data/new/init",
+        "function asset_manager:artifact/data/new/set_to_current",
+        "execute as SealOwner run function asset:artifact/common/check_condition/offhand",
+        "execute if entity @a[name=SealOwner,tag=CanUsed,tag=Death]"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Fixture: leave Death tag",
+      "commands": [
+        "tag SealOwner remove Death"
+      ],
+      "expect": [
+        "(Set .*game mode|Added tag|Removed tag)"
+      ]
+    },
+    {
+      "name": "Process equipment and Effect events",
+      "ticks": 3
+    },
+    {
+      "name": "Solo guard is active",
+      "commands": [
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 0\\.9d"
+      ]
+    },
+    {
+      "name": "Contact two players",
+      "commands": [
+        "tp SealTarget 1.1 80 0.5",
+        "tp SealThird -0.1 80 0.5"
+      ],
+      "expect": [
+        "Teleported"
+      ]
+    },
+    {
+      "name": "Process contact",
+      "ticks": 1
+    },
+    {
+      "name": "Owner guard removed",
+      "commands": [
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Process Effects granted during contact independently of player order",
+      "ticks": 1
+    },
+    {
+      "name": "Exactly one target gets boost",
+      "commands": [
+        "execute as SealTarget run function api:modifier/attack/base/get",
+        "data get storage api: Return.Attack.Base",
+        "execute as SealThird run function api:modifier/attack/base/get",
+        "data get storage api: Return.Attack.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d",
+        "following contents: 1\\.2d"
+      ]
+    },
+    {
+      "name": "Cooldown Effect starts at 1200 ticks; unequip",
+      "commands": [
+        "data modify storage api: Argument.ID set value 401",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute if data storage api: Return.Effect{ID:401,Duration:1200,IsBadEffect:1b,Visible:1b,ProcessOnDied:\"keep\",RequireClearLv:3}",
+        "item replace entity SealOwner hotbar.0 from entity SealOwner weapon.offhand",
+        "item replace entity SealOwner weapon.offhand with air"
+      ],
+      "expect": [
+        "Test passed",
+        "Replaced"
+      ]
+    },
+    {
+      "name": "Boost duration expires while unequipped",
+      "ticks": 301
+    },
+    {
+      "name": "Cooldown counts down while unequipped",
+      "commands": [
+        "data modify storage api: Argument.ID set value 401",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute if data storage api: Return.Effect{ID:401,Duration:899}"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Target boost expired",
+      "commands": [
+        "execute as SealTarget run function api:modifier/attack/base/get",
+        "data get storage api: Return.Attack.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Third boost expired",
+      "commands": [
+        "execute as SealThird run function api:modifier/attack/base/get",
+        "data get storage api: Return.Attack.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Re-equip while still touching",
+      "commands": [
+        "item replace entity SealOwner weapon.offhand from entity SealOwner hotbar.0",
+        "item replace entity SealOwner hotbar.0 with air"
+      ],
+      "expect": [
+        "Replaced"
+      ]
+    },
+    {
+      "name": "Process re-equip in cooldown",
+      "ticks": 2
+    },
+    {
+      "name": "Re-equip does not reset cooldown",
+      "commands": [
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Contact without guard does not transfer",
+      "commands": [
+        "data modify storage api: Argument.ID set value 401",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute if data storage api: Return.Effect{ID:401,Duration:897}"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "SealTarget receives no boost during cooldown",
+      "commands": [
+        "execute as SealTarget run function api:modifier/attack/base/get",
+        "data get storage api: Return.Attack.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "SealThird receives no boost during cooldown",
+      "commands": [
+        "execute as SealThird run function api:modifier/attack/base/get",
+        "data get storage api: Return.Attack.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Separate players and give boost",
+      "commands": [
+        "tp SealTarget 5.5 80 0.5",
+        "tp SealThird 10.5 80 0.5",
+        "data modify storage api: Argument.ID set value 400",
+        "data modify storage api: Argument.Duration set value 300",
+        "data modify storage api: Argument.FieldOverride set value {AttackAmount:0.2d}",
+        "execute as SealTarget run function api:entity/mob/effect/give",
+        "function api:entity/mob/effect/reset"
+      ],
+      "expect": [
+        "Running function"
+      ]
+    },
+    {
+      "name": "Process initial given",
+      "ticks": 1
+    },
+    {
+      "name": "Initial given applies twenty percent boost",
+      "commands": [
+        "execute as SealTarget run function api:modifier/attack/base/get",
+        "data get storage api: Return.Attack.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.2d"
+      ]
+    },
+    {
+      "name": "Advance boost timer",
+      "ticks": 100
+    },
+    {
+      "name": "Refresh boost duration",
+      "commands": [
+        "data modify storage api: Argument.ID set value 400",
+        "data modify storage api: Argument.Duration set value 300",
+        "data modify storage api: Argument.FieldOverride set value {AttackAmount:0.2d}",
+        "execute as SealTarget run function api:entity/mob/effect/give",
+        "function api:entity/mob/effect/reset"
+      ],
+      "expect": [
+        "Running function"
+      ]
+    },
+    {
+      "name": "Process refresh",
+      "ticks": 1
+    },
+    {
+      "name": "Refresh yields Duration 300",
+      "commands": [
+        "data modify storage api: Argument.ID set value 400",
+        "execute as SealTarget run function api:entity/mob/effect/get/from_id",
+        "data get storage api: Return.Effect.Duration"
+      ],
+      "expect": [
+        "following contents: 300"
+      ]
+    },
+    {
+      "name": "Refresh remains 20 percent",
+      "commands": [
+        "execute as SealTarget run function api:modifier/attack/base/get",
+        "data get storage api: Return.Attack.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.2d"
+      ]
+    },
+    {
+      "name": "Advance to one tick before cooldown Effect expires",
+      "ticks": 794
+    },
+    {
+      "name": "Cooldown still has one tick remaining",
+      "commands": [
+        "data modify storage api: Argument.ID set value 401",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute if data storage api: Return.Effect{ID:401,Duration:1}"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Guard unavailable before cooldown expires",
+      "commands": [
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Expire cooldown Effect",
+      "ticks": 1
+    },
+    {
+      "name": "Cooldown Effect removed at its deadline",
+      "commands": [
+        "data modify storage api: Argument.ID set value 401",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Artifact observes expired cooldown on next tick",
+      "ticks": 1
+    },
+    {
+      "name": "Guard restored after cooldown",
+      "commands": [
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 0\\.9d"
+      ]
+    },
+    {
+      "name": "Unequip guard",
+      "commands": [
+        "item replace entity SealOwner weapon.offhand with air"
+      ],
+      "expect": [
+        "Replaced"
+      ]
+    },
+    {
+      "name": "Process unequip",
+      "ticks": 1
+    },
+    {
+      "name": "Guard removed on unequip",
+      "commands": [
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Guard Effect and temporary contact tags are absent",
+      "commands": [
+        "data modify storage api: Argument.ID set value 399",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect if entity @a[name=SealOwner,tag=!this,tag=!399.Contact] unless entity @a[tag=399.Contact]"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Fixture: independent defense modifier and pending guard while touching",
+      "commands": [
+        "data modify storage api: Argument.UUID set value [I;0,0,0,1412]",
+        "data modify storage api: Argument.Amount set value 0.5d",
+        "data modify storage api: Argument.Operation set value \"multiply\"",
+        "execute as SealOwner run function api:modifier/defense/base/add",
+        "data modify storage api: Argument.ID set value 1412",
+        "execute as SealOwner at @s run function api:artifact/give/from_id",
+        "item replace entity SealOwner weapon.offhand from entity SealOwner hotbar.0",
+        "item replace entity SealOwner hotbar.0 with air",
+        "tp SealTarget 1.1 80 0.5",
+        "data modify storage api: Argument.ID set value 399",
+        "data modify storage api: Argument.Duration set value 2147483647",
+        "data modify storage api: Argument.FieldOverride set value {DefenseAmount:0.1d,AttackAmount:0.2d,AttackDuration:300,Cooldown:1200}",
+        "execute as SealOwner run function api:entity/mob/effect/give",
+        "function api:entity/mob/effect/reset",
+        "data modify storage api: Argument.ID set value 399",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute if data storage api: Return.Effect{NextEvent:\"given\"}"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Process pending given before permitting transfer",
+      "ticks": 1
+    },
+    {
+      "name": "Guard stacks with independent defense contribution",
+      "commands": [
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 0\\.45d"
+      ]
+    },
+    {
+      "name": "Pending given did not start cooldown",
+      "commands": [
+        "data modify storage api: Argument.ID set value 401",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Pending given did not grant target boost",
+      "commands": [
+        "data modify storage api: Argument.ID set value 400",
+        "execute as SealTarget run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Remove guard through public API before next contact tick",
+      "commands": [
+        "data modify storage api: Argument.ID set value 399",
+        "execute as SealOwner run function api:entity/mob/effect/remove/from_id",
+        "function api:entity/mob/effect/reset",
+        "data modify storage api: Argument.ID set value 399",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute if data storage api: Return.Effect{Duration:-1}"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Process pending removal while still touching",
+      "ticks": 1
+    },
+    {
+      "name": "Removal event deleted guard",
+      "commands": [
+        "data modify storage api: Argument.ID set value 399",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Pending removal did not start cooldown",
+      "commands": [
+        "data modify storage api: Argument.ID set value 401",
+        "execute as SealOwner run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Pending removal did not grant target boost",
+      "commands": [
+        "data modify storage api: Argument.ID set value 400",
+        "execute as SealTarget run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Removal retains independent defense contribution",
+      "commands": [
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 0\\.5d"
+      ]
+    },
+    {
+      "name": "Reapply guard after removal completes",
+      "ticks": 1
+    },
+    {
+      "name": "Guard reapplied without duplicating independent contribution",
+      "commands": [
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 0\\.45d"
+      ]
+    },
+    {
+      "name": "Active guard permits transfer on following tick",
+      "ticks": 1
+    },
+    {
+      "name": "Transfer removes only guard contribution through Effect event",
+      "commands": [
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 0\\.5d"
+      ]
+    },
+    {
+      "name": "Process transferred boost on target",
+      "ticks": 1
+    },
+    {
+      "name": "Active guard transfer gives target twenty percent boost",
+      "commands": [
+        "execute as SealTarget run function api:modifier/attack/base/get",
+        "data get storage api: Return.Attack.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.2d"
+      ]
+    },
+    {
+      "name": "Cleanup independent fixture modifier",
+      "commands": [
+        "data modify storage api: Argument.UUID set value [I;0,0,0,1412]",
+        "execute as SealOwner run function api:modifier/defense/base/remove",
+        "execute as SealOwner run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Fixture: grant standalone guard without the artifact",
+      "commands": [
+        "tp SealTarget 5.5 80 0.5",
+        "tp SealThird 10.5 80 0.5",
+        "data modify storage api: Argument.ID set value 399",
+        "data modify storage api: Argument.Duration set value 2147483647",
+        "data modify storage api: Argument.FieldOverride set value {DefenseAmount:0.1d,AttackAmount:0.2d,AttackDuration:300,Cooldown:1200}",
+        "execute as SealThird run function api:entity/mob/effect/give",
+        "function api:entity/mob/effect/reset",
+        "execute unless data entity SealThird Inventory[{tag:{TSB:{ID:1412}}}]"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Activate standalone guard",
+      "ticks": 1
+    },
+    {
+      "name": "Standalone guard supplies its own defense",
+      "commands": [
+        "execute as SealThird run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 0\\.9d"
+      ]
+    },
+    {
+      "name": "Fixture: mark standalone guard holder dead",
+      "commands": [
+        "tag SealThird add Death"
+      ],
+      "expect": [
+        "Added tag"
+      ]
+    },
+    {
+      "name": "Remove guard through standard death handling",
+      "ticks": 1
+    },
+    {
+      "name": "Death handling removes standalone guard",
+      "commands": [
+        "data modify storage api: Argument.ID set value 399",
+        "execute as SealThird run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Death handling removes only guard modifier",
+      "commands": [
+        "execute as SealThird run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Death handling does not grant cooldown",
+      "commands": [
+        "data modify storage api: Argument.ID set value 401",
+        "execute as SealThird run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Fixture: restore holder and give guard while touching",
+      "commands": [
+        "tag SealThird remove Death",
+        "tp SealTarget 11.1 80 0.5",
+        "data modify storage api: Argument.ID set value 399",
+        "data modify storage api: Argument.Duration set value 2147483647",
+        "data modify storage api: Argument.FieldOverride set value {DefenseAmount:0.1d,AttackAmount:0.2d,AttackDuration:300,Cooldown:1200}",
+        "execute as SealThird run function api:entity/mob/effect/give",
+        "function api:entity/mob/effect/reset"
+      ],
+      "expect": [
+        "Running function"
+      ]
+    },
+    {
+      "name": "Standalone Effect activates then transfers",
+      "ticks": 2
+    },
+    {
+      "name": "Standalone Effect consumes itself on contact",
+      "commands": [
+        "data modify storage api: Argument.ID set value 399",
+        "execute as SealThird run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Standalone Effect grants its own cooldown",
+      "commands": [
+        "data modify storage api: Argument.ID set value 401",
+        "execute as SealThird run function api:entity/mob/effect/get/from_id",
+        "execute if data storage api: Return.Effect{ID:401,Duration:1200}"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Standalone transfer releases defense modifier",
+      "commands": [
+        "execute as SealThird run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Process standalone transfer boost",
+      "ticks": 1
+    },
+    {
+      "name": "Standalone transfer refreshes target boost without stacking",
+      "commands": [
+        "execute as SealTarget run function api:modifier/attack/base/get",
+        "data get storage api: Return.Attack.Base"
+      ],
+      "expect": [
+        "following contents: 1\\.2d"
+      ]
+    },
+    {
+      "name": "Fixture: clear effects before caller-configured values",
+      "commands": [
+        "item replace entity SealOwner weapon.offhand with air",
+        "tp SealOwner 0.5 80 0.5",
+        "tp SealTarget 5.5 80 0.5",
+        "tp SealThird 10.5 80 0.5",
+        "data modify storage api: Argument.ID set value 399",
+        "execute as @a run function api:entity/mob/effect/remove/from_id",
+        "function api:entity/mob/effect/reset",
+        "data modify storage api: Argument.ID set value 400",
+        "execute as @a run function api:entity/mob/effect/remove/from_id",
+        "function api:entity/mob/effect/reset",
+        "data modify storage api: Argument.ID set value 401",
+        "execute as @a run function api:entity/mob/effect/remove/from_id",
+        "function api:entity/mob/effect/reset"
+      ],
+      "expect": [
+        "Running function"
+      ]
+    },
+    {
+      "name": "Process fixture removals",
+      "ticks": 1
+    },
+    {
+      "name": "Give guard with caller-configured values",
+      "commands": [
+        "data modify storage api: Argument.ID set value 399",
+        "data modify storage api: Argument.Duration set value 40",
+        "data modify storage api: Argument.FieldOverride set value {DefenseAmount:0.25d,AttackAmount:0.4d,AttackDuration:500,Cooldown:1600}",
+        "execute as SealThird run function api:entity/mob/effect/give",
+        "function api:entity/mob/effect/reset"
+      ],
+      "expect": [
+        "Running function"
+      ]
+    },
+    {
+      "name": "Initialize configured guard through given",
+      "ticks": 1
+    },
+    {
+      "name": "Configured guard reduces damage by twenty-five percent",
+      "commands": [
+        "execute as SealThird run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "following contents: 0\\.75d"
+      ]
+    },
+    {
+      "name": "Touch recipient with configured guard",
+      "commands": [
+        "tp SealTarget 11.1 80 0.5"
+      ],
+      "expect": [
+        "Teleported"
+      ]
+    },
+    {
+      "name": "Transfer caller-configured boost and cooldown",
+      "ticks": 1
+    },
+    {
+      "name": "Cooldown accepts duration above former default",
+      "commands": [
+        "data modify storage api: Argument.ID set value 401",
+        "execute as SealThird run function api:entity/mob/effect/get/from_id",
+        "execute if data storage api: Return.Effect{Duration:1600}",
+        "function api:entity/mob/effect/reset"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Apply configured boost",
+      "ticks": 1
+    },
+    {
+      "name": "Boost uses configured amount",
+      "commands": [
+        "execute as SealTarget run function api:modifier/attack/base/get",
+        "execute store result score #DualRhythmValue Temporary run data get storage api: Return.Attack.Base 1000000",
+        "execute if score #DualRhythmValue Temporary matches 1399999..1400001",
+        "scoreboard players reset #DualRhythmValue Temporary"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Boost duration is not capped at former default",
+      "commands": [
+        "data modify storage api: Argument.ID set value 400",
+        "execute as SealTarget run function api:entity/mob/effect/get/from_id",
+        "data get storage api: Return.Effect.Duration",
+        "function api:entity/mob/effect/reset"
+      ],
+      "expect": [
+        "following contents: (499|500)\\b"
+      ]
+    },
+    {
+      "name": "Refresh active boost with the same amount and longer duration",
+      "commands": [
+        "data modify storage api: Argument.ID set value 400",
+        "data modify storage api: Argument.Duration set value 600",
+        "data modify storage api: Argument.FieldOverride set value {AttackAmount:0.4d}",
+        "execute as SealTarget run function api:entity/mob/effect/give",
+        "function api:entity/mob/effect/reset"
+      ],
+      "expect": [
+        "Running function"
+      ]
+    },
+    {
+      "name": "Apply longer boost duration",
+      "ticks": 1
+    },
+    {
+      "name": "Re-given preserves configured amount without stacking",
+      "commands": [
+        "execute as SealTarget run function api:modifier/attack/base/get",
+        "execute store result score #DualRhythmValue Temporary run data get storage api: Return.Attack.Base 1000000",
+        "execute if score #DualRhythmValue Temporary matches 1399999..1400001",
+        "scoreboard players reset #DualRhythmValue Temporary"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Re-given replaces duration with caller value",
+      "commands": [
+        "data modify storage api: Argument.ID set value 400",
+        "execute as SealTarget run function api:entity/mob/effect/get/from_id",
+        "execute if data storage api: Return.Effect{Duration:600}",
+        "function api:entity/mob/effect/reset"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Refresh boost with shorter caller duration",
+      "commands": [
+        "data modify storage api: Argument.ID set value 400",
+        "data modify storage api: Argument.Duration set value 40",
+        "data modify storage api: Argument.FieldOverride set value {AttackAmount:0.4d}",
+        "execute as SealTarget run function api:entity/mob/effect/give",
+        "function api:entity/mob/effect/reset"
+      ],
+      "expect": [
+        "Running function"
+      ]
+    },
+    {
+      "name": "Apply shortened duration",
+      "ticks": 1
+    },
+    {
+      "name": "Shorter refresh preserves configured amount",
+      "commands": [
+        "execute as SealTarget run function api:modifier/attack/base/get",
+        "execute store result score #DualRhythmValue Temporary run data get storage api: Return.Attack.Base 1000000",
+        "execute if score #DualRhythmValue Temporary matches 1399999..1400001",
+        "scoreboard players reset #DualRhythmValue Temporary"
+      ],
+      "expect": [
+        "Test passed"
+      ]
+    },
+    {
+      "name": "Expire boost after caller duration",
+      "ticks": 40
+    },
+    {
+      "name": "Configured boost expires and removes its modifier",
+      "commands": [
+        "data modify storage api: Argument.ID set value 400",
+        "execute as SealTarget run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect",
+        "function api:entity/mob/effect/reset",
+        "execute as SealTarget run function api:modifier/attack/base/get",
+        "data get storage api: Return.Attack.Base"
+      ],
+      "expect": [
+        "Test passed",
+        "following contents: 1\\.0d"
+      ]
+    },
+    {
+      "name": "Give short-lived guard away from other players",
+      "commands": [
+        "tp SealTarget 5.5 80 0.5",
+        "data modify storage api: Argument.ID set value 399",
+        "data modify storage api: Argument.Duration set value 2",
+        "data modify storage api: Argument.FieldOverride set value {DefenseAmount:0.25d,AttackAmount:0.4d,AttackDuration:500,Cooldown:1600}",
+        "execute as SealThird run function api:entity/mob/effect/give",
+        "function api:entity/mob/effect/reset"
+      ],
+      "expect": [
+        "Running function"
+      ]
+    },
+    {
+      "name": "Apply short-lived guard",
+      "ticks": 1
+    },
+    {
+      "name": "Expire guard at caller duration",
+      "ticks": 2
+    },
+    {
+      "name": "Guard expiry removes defense",
+      "commands": [
+        "data modify storage api: Argument.ID set value 399",
+        "execute as SealThird run function api:entity/mob/effect/get/from_id",
+        "execute unless data storage api: Return.Effect",
+        "function api:entity/mob/effect/reset",
+        "execute as SealThird run function api:modifier/defense/base/get",
+        "data get storage api: Return.Defense.Base"
+      ],
+      "expect": [
+        "Test passed",
+        "following contents: 1\\.0d"
+      ]
+    }
+  ]
+}

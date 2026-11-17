@@ -13,7 +13,7 @@
 # 説明文 (TextComponentString[])
     data modify storage asset:effect Description set value ['{"text":"チャージ終了時、チャージ段階に比例して斬撃を放つ"}']
 # 効果時間 (int) (default = API || error)
-    data modify storage asset:effect Duration set value 1
+    data modify storage asset:effect Duration set value 2147483647
 # スタック (int) (default = API || 1)
     # data modify storage asset:effect Stack set value
 # 効果時間の操作方法 (default = API || "replace")
@@ -36,4 +36,3 @@
     # data modify storage asset:effect StackVisible set value
 
 # フィールド
-    data modify storage asset:effect Field.Charge set value 0
