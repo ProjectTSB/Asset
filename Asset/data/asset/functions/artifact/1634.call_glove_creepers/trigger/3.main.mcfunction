@@ -13,7 +13,10 @@
     data modify storage asset:temp 1634.FieldOverride.SwingCooldown set value 5
     data modify storage asset:temp 1634.FieldOverride.LifeTime set value 360
     data modify storage asset:temp 1634.FieldOverride.EnemyKnockback set value 1.0d
-    data modify storage asset:temp 1634.FieldOverride.PlayerKnockback set value 1.5d
+    data modify storage asset:temp 1634.FieldOverride.EmpowerTime set value 240
+    data modify storage asset:temp 1634.FieldOverride.EmpoweredSwingCooldown set value 1
+    data modify storage asset:temp 1634.FieldOverride.EmpoweredReturnDuration set value 2
+    data modify storage asset:temp 1634.FieldOverride.EmpoweredHitHoldDuration set value 2
 
 # 右のグローブを召喚する
     data modify storage api: Argument.ID set value 1195
@@ -26,7 +29,7 @@
     execute anchored eyes positioned ^ ^ ^ rotated ~ 0 positioned ^1.0 ^-0.3 ^0.2 rotated as @s run function api:object/summon
 
 # 演出
-    playsound entity.creeper.primed player @a[distance=..16] ~ ~ ~ 0.7 1.2
+    playsound entity.creeper.primed player @a ~ ~ ~ 0.7 1.2
 
 # リセット
     data remove storage asset:temp 1634

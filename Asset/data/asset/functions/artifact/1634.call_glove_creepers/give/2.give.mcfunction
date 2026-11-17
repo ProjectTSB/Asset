@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text":"コール:グローブ・クリーパーズ","color":"#6CEB35"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text":"グローブの形をしたクリーパーを両隣に召喚する"}','{"text":"画面を左右に動かしたとき、同じ向きにパンチを行い爆発する"}','{"text":"爆発はプレイヤーも含めて辺りのものを大きく吹っ飛ばす"}','{"text":"ロケットパンチにあこがれたクリーパーたちの末路","color":"dark_gray"}']
+    data modify storage asset:artifact Lore set value ['{"text":"グローブの形をしたクリーパーを両隣に召喚する"}','{"text":"画面を左右に動かしたとき、同じ向きにパンチを行い爆発する"}','{"text":"召喚して12秒経つとパンチを発動しやすくなり"}','{"text":"パンチのスピードが大きく上昇する"}','{"text":"ロケットパンチにあこがれたクリーパーたちの末路","color":"dark_gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
