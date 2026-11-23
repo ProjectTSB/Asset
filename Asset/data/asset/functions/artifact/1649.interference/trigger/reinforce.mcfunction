@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:artifact/1649.interference/trigger/2.check_condition
+# @within function asset:artifact/1649.interference/trigger/3.main
 
 # タグ
     tag @s add O1217.Checked
@@ -10,11 +10,6 @@
 
 # 見た目を更新
     data modify entity @s item.tag.CustomModelData set value 20672
-
-# 無条件ででMPを40消費
-    data modify storage api: Argument.Fluctuation set value -40
-    data modify storage api: Argument.DisableLog set value true
-    execute as @p[tag=this] run function api:mp/fluctuation
 
 # MPが0になったなら追加でObject1217を召喚
     execute as @p[tag=this] run function api:mp/get_current
@@ -24,4 +19,4 @@
     playsound block.bubble_column.upwards_inside neutral @a ~ ~ ~ 2.0 2.0
 
 # リセット
-    scoreboard players reset $A1649.UserID
+    tag @s remove A1649.Reinforceable
