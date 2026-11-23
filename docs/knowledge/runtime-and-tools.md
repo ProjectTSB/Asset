@@ -144,6 +144,12 @@ block_display・item_display・text_displayの選択基準は、DevSpaceの `doc
 CharとBackCharはTextComponentのJSON文字列に挿入できる文字、Fontはフォントのリソースロケーションを指定する。`Field.Color` は任意の両面共通色で、TextComponentの色名または `"#RRGGBB"` を指定する。未設定時はcolorプロパティを追加しない。画像は指定したフォントを提供するリソースパックで管理する。
 
 
+### フォントアニメーションのコマの中心を揃える
+
+[1219.font_animation](../../Asset/data/asset/functions/object/1219.font_animation/summon.m.mcfunction) は、同じ64×64のキャンバスの中央に描いた2枚を `text_display` で切り替える。Bitmap Fontの送り幅は右端の不透明ピクセルに依存するため、画像の寸法が同じでも描画に使う行幅は変わる。各コマの末尾に `space` フォントで必要な幅を足し、同じ行幅で画像の中心を揃える。縦方向はフォント定義の `ascent` で揃える。
+
+1219では送り幅48と57にそれぞれ18と9を足して行幅を66に揃える。コマ画像の不透明範囲やフォントの `height` を変えるときは、空白幅と `ascent` を再確認する。
+
 ## displayの初回位置合わせを非表示で行う
 
 [Ecual の予告線](../../Asset/data/asset/functions/mob/0392.ecual_first/ai/projectile/announce_line/2.tick.mcfunction) は、横断面のscaleを0にして生成し、負の残り時間を最初の処理で正に反転する。可視化判定は反転より前にあるため、初回の位置合わせ中は非表示を保ち、次の処理でscaleと `teleport_duration:1` を設定する。負数は単なる異常な時間値ではなく、初回処理と表示開始を分ける状態も表している。
