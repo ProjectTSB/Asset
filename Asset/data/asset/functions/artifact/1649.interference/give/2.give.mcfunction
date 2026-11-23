@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "インターフェアランス", "color": "#69bdff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "前方に波の斬撃を飛ばす。"}', '{"text": "斬撃がすでに存在しているなら、その斬撃を一瞬だけ強化する。"}', '{"text": "強化は必要量を無視してMPを消費し、"}', '{"text": "その消費でMPが0になった場合、"}', '{"text": "ヒット時に強化不可の斬撃を一つ追加で飛ばす。"}', '{"text": "波は、どんどん高くなる。", "color": "gray"}']
+    data modify storage asset:artifact Lore set value ['{"text": "前方に波の斬撃を飛ばす。"}', '{"text": "斬撃がすでに存在しているなら、その斬撃を一瞬だけ強化する。"}', '{"text": "強化は必要量を無視してMPを消費する。"}', '{"text": "その消費でMPが0になった場合、"}', '{"text": "ヒット時に強化不可の斬撃を一つ追加で飛ばす。"}', '{"text": "波は、どんどん高くなる。", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
