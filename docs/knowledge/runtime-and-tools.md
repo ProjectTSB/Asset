@@ -148,7 +148,7 @@ CharとBackCharはTextComponentのJSON文字列に挿入できる文字、Font�
 
 [1219.font_animation](../../Asset/data/asset/functions/object/1219.font_animation/summon.m.mcfunction) は、同じ64×64のキャンバスの中央に描いた2枚を `text_display` で切り替える。Bitmap Fontの送り幅は右端の不透明ピクセルに依存するため、画像の寸法が同じでも描画に使う行幅は変わる。各コマの末尾に `space` フォントで必要な幅を足し、同じ行幅で画像の中心を揃える。縦方向はフォント定義の `ascent` で揃える。
 
-1219では送り幅48と57にそれぞれ18と9を足して行幅を66に揃える。コマ画像の不透明範囲やフォントの `height` を変えるときは、空白幅と `ascent` を再確認する。
+1219の2コマはどちらも画像の右端まで描かれているため、送り幅65に空白幅1を足して行幅を66に揃える。コマ画像の不透明範囲やフォントの `height` を変えるときは、空白幅と `ascent` を再確認する。
 
 ## displayの初回位置合わせを非表示で行う
 
