@@ -10,7 +10,7 @@
 
 # 既に自身が発射した、強化済みでないObject1217が存在するならMPチェックを無視
     scoreboard players operation $A1649.UserID Temporary = @s UserID
-    execute as @e[type=item_display,tag=!O1217.Checked,scores={ObjectID=1217},distance=..32] if score @s O1217.UserID = $A1649.UserID Temporary run data modify storage asset:artifact DisabledCheckFlag.MPRequire set value true
+    execute as @e[type=item_display,tag=!O1217.Checked,tag=!O1217.Additional,scores={ObjectID=1217},distance=..32] if score @s O1217.UserID = $A1649.UserID Temporary run data modify storage asset:artifact DisabledCheckFlag.MPRequire set value true
     scoreboard players reset $A1649.UserID
 
 # 神器の基本的な条件の確認を行うfunction、成功している場合CanUsedタグが付く
