@@ -17,6 +17,3 @@
 
 # 演出
     playsound block.bubble_column.upwards_inside neutral @a ~ ~ ~ 2.0 2.0
-
-# リセット
-    tag @s remove A1649.Reinforceable

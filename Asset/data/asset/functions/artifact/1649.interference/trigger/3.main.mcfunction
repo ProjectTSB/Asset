@@ -5,9 +5,8 @@
 # @within function asset:artifact/1649.interference/trigger/2.check_condition
 
 #> private
-# @within function asset:artifact/1649.interference/trigger/3.main
+# @private
     #declare score_holder $A1649.UserID
-# @within function asset:artifact/1649.interference/trigger/*
     #declare tag A1649.Reinforceable
 
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
@@ -20,7 +19,7 @@
 
 # 処理を召喚と強化で分岐
     execute unless entity @e[type=item_display,tag=A1649.Reinforceable,distance=..32] run function asset:artifact/1649.interference/trigger/summon
-    execute as @e[type=item_display,tag=A1649.Reinforceable,distance=..32] run function asset:artifact/1649.interference/trigger/reinforce
+    execute as @e[type=item_display,tag=A1649.Reinforceable,distance=..32] if function asset:artifact/1649.interference/trigger/reinforce run tag @s remove A1649.Reinforceable
 
 # リセット
     scoreboard players reset $A1649.UserID
