@@ -17,3 +17,5 @@
 
 # 演出
     playsound block.bubble_column.upwards_inside neutral @a ~ ~ ~ 2.0 2.0
+
+    return 1
