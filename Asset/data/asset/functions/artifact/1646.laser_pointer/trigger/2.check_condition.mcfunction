@@ -14,13 +14,15 @@
 # CDを無視して前方をチェック、視点先の敵にHitタグをつける
     execute anchored eyes positioned ^ ^ ^ run function asset:artifact/1646.laser_pointer/trigger/rec
 
-# 対象がすでに使用者に付与されたEffect420を持っているならスタックを重ねる
+# Hitがついた対象が「使用者に付与されたEffect420」を持っているならスタックを重ねる
+    #Effect取得
     data modify storage api: Argument.ID set value 420
     execute as @e[type=#lib:living_without_player,tag=Enemy,tag=A1646.Hit,tag=!Uninterferable,distance=..10] run function api:entity/mob/effect/get/from_id
+    #付与したプレイヤーのUserIDを取得し比較
     execute store result score $A1646.UserID Temporary run data get storage api: Return.Effect.Field.OriginID
-    execute if data storage api: Return.Effect if score @s UserID = $A1646.UserID Temporary as @e[type=#lib:living_without_player,tag=Enemy,tag=A1646.Hit,tag=!Uninterferable,distance=..10] if function asset:artifact/1646.laser_pointer/trigger/apply_effect run tag @p[tag=this] remove CanUsed
-    # 使用者でないならキャンセル
-    execute if data storage api: Return.Effect unless score @s UserID = $A1646.UserID Temporary run tag @s remove CanUsed
+    execute if data storage api: Return.Effect if score @s UserID = $A1646.UserID Temporary as @e[type=#lib:living_without_player,tag=Enemy,tag=A1646.Hit,tag=!Uninterferable,distance=..10] run function asset:artifact/1646.laser_pointer/trigger/apply_effect
+    #Effectを持っているなら3.mainは実行しない
+    execute if data storage api: Return.Effect run tag @s remove CanUsed
 
 # CanUsedタグをチェックして3.main.mcfunctionを実行する
     execute if entity @s[tag=CanUsed] run function asset:artifact/1646.laser_pointer/trigger/3.main
