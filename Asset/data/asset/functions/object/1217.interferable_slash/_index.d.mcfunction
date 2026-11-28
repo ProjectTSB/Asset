@@ -8,3 +8,4 @@
     #declare tag O1217.Reinforced
     #declare tag O1217.Checked
     #declare tag O1217.SummonsAdditional
+    #declare tag O1217.Additional

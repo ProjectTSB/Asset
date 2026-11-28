@@ -15,7 +15,7 @@
 # 神器の名前 (TextComponentString)
     data modify storage asset:artifact Name set value '{"text": "インターフェアランス", "color": "#69bdff"}'
 # 神器の説明文 (TextComponentString[])
-    data modify storage asset:artifact Lore set value ['{"text": "飛ばした斬撃の威力を、再使用で0.5秒の間強化できる。"}', '{"text": "斬撃の強化は追加でMPを40消費する(必要MP0)。"}', '{"text": "その消費でMPが0になった場合、"}', '{"text": "ヒット時に強化不可の斬撃を一つ追加で飛ばす。"}', '{"text": "波は、どんどん高くなる。", "color": "gray"}']
+    data modify storage asset:artifact Lore set value ['{"text": "前方に波の斬撃を飛ばす。"}', '{"text": "斬撃がすでに存在しているなら、その斬撃を一瞬だけ強化する。"}', '{"text": "強化は必要量を無視してMPを消費する。"}', '{"text": "その消費でMPが0になった場合、"}', '{"text": "ヒット時に強化不可の斬撃を一つ追加で飛ばす。"}', '{"text": "波は、どんどん高くなる。", "color": "gray"}']
 # 消費アイテム ({Item: TextComponent, Count: int, Extra?: TextComponent}) (オプション)
     # data modify storage asset:artifact ConsumeItem.Item set value '{"translate":"item.minecraft.stick"}'
     # data modify storage asset:artifact ConsumeItem.Count set value 1
@@ -29,7 +29,7 @@
 # 神器の発動条件 (TextComponentString) (オプション)
     # data modify storage asset:artifact Condition set value
 # 攻撃に関する情報 -Damage量 (literal[]/literal) Wikiを参照 (オプション)
-    data modify storage asset:artifact AttackInfo.Damage set value "200-300 / 150"
+    data modify storage asset:artifact AttackInfo.Damage set value "50-150 / 200"
 # 攻撃に関する情報 -攻撃タイプ (string[]) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackType set value [Magic]
 # 攻撃に関する情報 -攻撃属性 (string[]) Wikiを参照 (オプション)
@@ -41,7 +41,7 @@
 # 攻撃に関する情報 -攻撃範囲 (literal) Wikiを参照 (オプション)
     data modify storage asset:artifact AttackInfo.AttackRange set value 15
 # MP消費量 (int)
-    data modify storage asset:artifact MPCost set value 40
+    data modify storage asset:artifact MPCost set value 20
 # MP必要量 (int) (オプション)
     # data modify storage asset:artifact MPRequire set value
 # MP回復量 (int)
@@ -50,7 +50,7 @@
     # data modify storage asset:artifact LocalCooldown set value
 # 種別クールダウン ({Type: string, Duration: int}) (オプション)
     data modify storage asset:artifact TypeCooldown.Type set value "longRange"
-    data modify storage asset:artifact TypeCooldown.Duration set value 60
+    data modify storage asset:artifact TypeCooldown.Duration set value 2
 # グローバルクールダウン (int) (オプション)
     # data modify storage asset:artifact SpecialCooldown set value
 # クールダウンによる使用不可のメッセージを非表示にするか否か (boolean) (オプション)

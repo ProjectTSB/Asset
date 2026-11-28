@@ -4,32 +4,22 @@
 #
 # @within function asset:artifact/1649.interference/trigger/2.check_condition
 
+#> private
+# @private
+    #declare score_holder $A1649.UserID
+    #declare tag A1649.Reinforceable
+
 # 基本的な使用時の処理(MP消費や使用回数の処理など)を行う
     function asset:artifact/common/use/mainhand
 
 # ここから先は神器側の効果の処理を書く
-# Object1217を召喚
-    data modify storage api: Argument.ID set value 1217
-    execute store result storage api: Argument.FieldOverride.UserID int 1 run scoreboard players get @s UserID
+# 強化可能かどうか(自身が発射した、チェック済みでも強化不可でもないObject1217の存在)をチェック
+    scoreboard players operation $A1649.UserID Temporary = @s UserID
+    execute as @e[type=item_display,tag=!O1217.Checked,tag=!O1217.Additional,scores={ObjectID=1217},distance=..32] if score @s O1217.UserID = $A1649.UserID Temporary run tag @s add A1649.Reinforceable
 
-    # ベースのダメージ
-        data modify storage api: Argument.FieldOverride.Damage set value 200.0d
+# 処理を召喚と強化で分岐
+    execute unless entity @e[type=item_display,tag=A1649.Reinforceable,distance=..32] run function asset:artifact/1649.interference/trigger/summon
+    execute as @e[type=item_display,tag=A1649.Reinforceable,distance=..32] if function asset:artifact/1649.interference/trigger/reinforce run tag @s remove A1649.Reinforceable
 
-    # 強化状態の持続時間
-        data modify storage api: Argument.FieldOverride.ReinforcementTimer set value 10
-
-    # 強化状態での威力バフ
-        data modify storage api: Argument.FieldOverride.DamageMultiplier set value 1.5
-
-    # 追撃の威力
-        data modify storage api: Argument.FieldOverride.AdditionalDamage set value 150.0d
-
-    # 弾速・射程
-        data modify storage api: Argument.FieldOverride.Speed set value 1
-        data modify storage api: Argument.FieldOverride.Range set value 30
-
-    execute anchored eyes positioned ^ ^-0.4 ^ run function api:object/summon
-
-# 演出
-    playsound entity.squid.squirt player @a ~ ~ ~ 1.5 1.5
-    playsound entity.slime.attack player @a ~ ~ ~ 1.0 1.0
+# リセット
+    scoreboard players reset $A1649.UserID
